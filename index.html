@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <title>BA-PHERD</title>
+  
+
+   
+  
+  
+  
+
+  
+  
+  
+  
+    <meta name="author" content="BA-PHERD: Big Data Analytics Pipeline for the Identification of Heterogeneous Extracellular non-coding RNAs as Disease Biomarkers">
+  
+  
+
+  <meta property="og:url" content="http://localhost:4000/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<b>BA-PHERD</b><br> Big Data Analytics Pipeline for the Identification of Heterogeneous Extracellular non-coding RNAs as Disease Biomarkers">
+  
+  
+  
+    <meta property="og:image" content="http://localhost:4000/assets/theme/images/2026/banner.png">
+  
+
+  <link rel="icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+  <!-- Bootstrap CSS is included in main.css -->
+  <link rel="stylesheet" href="/assets/theme/css/main.css">
+  <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="/assets/theme/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/theme/css/pygments.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  
+  <link rel="alternate" type="application/rss+xml" title="BA-PHERD - RSS feed" href="http://localhost:4000/feed.xml" >
+  <!-- Javascript libraries: loaded at top so templates can use these -->
+  <script src="/assets/theme/js/jquery.min.js"></script>
+  <script src="/assets/theme/js/popper.min.js"></script>
+  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <script src="/assets/theme/js/dynamic_page.js"></script>
+</head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-print-none" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      
+        <img class="me-3" src="/assets/theme/images/icon.jpg" alt="BA-PHERD">
+      
+      BA-PHERD
+    </a>
+    
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+        Menu <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ms-auto">
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/#about">Project</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/#consortium">Consortium</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/#publications">Publications</a>
+              </li>
+            
+          
+        </ul>
+      </div>
+    
+  </div>
+</nav>
+
+
+    <main id="main-content">
+      
+
+  <header class="header bg-image" id="main-head" style="background-image: url('/assets/theme/images/2026/banner.png')">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 position-relative mx-auto">
+          <h1 class="home"><b>BA-PHERD</b><br> Big Data Analytics Pipeline for the Identification of Heterogeneous Extracellular non-coding RNAs as Disease Biomarkers</h1>
+          
+          
+            <img src="/assets/theme/images/2026/prin.jpg" alt="PRIN" class="prin-image">
+          
+          
+          <div class="lead">
+</div>
+          
+          
+
+          <div class="tags">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </header>
+
+
+      <div class="container content">
+          
+        
+
+<div class="row">
+  <div class="col-md-10 col-lg-8 mx-auto">
+    <div class="row">
+      <div class="col">
+
+        <section id="about">
+    <h2>The project</h2>
+    <b>BA-PHERD: Big Data Analytics Pipeline for the Identification of Heterogeneous Extracellular non-coding RNAs as
+        Disease Biomarkers</b>
+
+    <p>The study of functional associations between biological entities and human diseases is a pivotal task of modern
+        research, with the ultimate goal of developing more effective and personalized therapeutic approaches. Among the
+        most promising avenues in this direction is the analysis of extracellular RNAs (exRNAs), RNA molecules
+        detectable outside the cell in biofluids such as blood, urine, and saliva, whose profiles have been
+        reported as diagnostic, prognostic, and theranostic biomarkers for a wide range of diseases, including cancer,
+        Alzheimer's, and Parkinson's disease.</p>
+
+    <p>Current computational approaches for exRNA biomarker discovery, however, face severe limitations: existing
+        machine learning methods struggle to jointly handle the heterogeneity of biological entities (miRNAs, lncRNAs,
+        circRNAs), the massive scale and multi-view nature of the data, and the sensitivity of clinical sources,
+        all of which are simultaneously present in exRNA analysis. Moreover, data governance solutions for biological
+        pipelines remain coarse-grained, platform-dependent, and ill-suited to dynamic coalitions of institutions
+        sharing sensitive data.</p>
+
+    <p>To overcome these challenges, BA-PHERD defines a complete Big Data Analytics pipeline, from data
+        acquisition and ingestion to model learning, evaluation, and sharing, purpose-built for heterogeneous
+        exRNA analysis.</p>
+
+    <p>BA-PHERD relies on 3 pillars:</p>
+    <ul>
+        <li><strong>novel machine learning methods</strong> for heterogeneous attributed network data, supporting node
+            classification, link prediction, and subgraph identification without relying on manually defined meta-paths;
+        </li>
+        <li><strong>a tailored data governance solution</strong> based on an enhanced, annotation-driven access control
+            system that balances data sharing within research coalitions with strict data protection requirements;</li>
+        <li><strong>biological validation</strong>, combining bioinformatics analysis and a pilot experimental study on
+            neurodegenerative disease biomarkers (Alzheimer's, Parkinson's, Lewy Body Dementia) using patient-derived
+            biofluid samples.</li>
+    </ul>
+
+    <p>The synergic exploitation of these pillars, grounded in Graph Neural Networks and Relational Learning and
+        validated in a real clinical scenario, makes BA-PHERD a holistic framework pursuing an innovative,
+        data-sovereign approach to biomarker discovery. BA-PHERD represents a decisive step toward non-invasive,
+        cost-effective early diagnosis of human diseases, with direct impact on patients, healthcare systems, and the
+        broader biomedical research community.</p>
+</section>
+
+<section id="consortium">
+    <h2>The Consortium</h2>
+
+    <div class="consortium-unit">
+        <h4>Università di Bari "Aldo Moro"</h4>
+        <ul>
+            <li>Michelangelo Ceci &mdash; Principal Investigator</li>
+            <li>Annunziata D'Aversa</li>
+        </ul>
+    </div>
+
+    <div class="consortium-unit">
+        <h4>Università di Milano</h4>
+        <ul>
+            <li>Claudio A. Ardagna</li>
+            <li>Marco Luzzara</li>
+        </ul>
+    </div>
+
+    <div class="consortium-unit">
+        <h4>Consiglio Nazionale delle Ricerche - Istituto di Tecnologie Biomediche</h4>
+        <ul>
+            <li>Domenica D'Elia</li>
+            <li>Cristina Pizzulli</li>
+        </ul>
+    </div>
+</section>
+
+<section id="logos" class="row flex-expand">
+    <div class="col-md-4 col-sm-12 item-expand">
+        <a href="https://www.uniba.it/" target="_blank" rel="noopener">
+            <div class="pad shadow">
+                <img src="/assets/theme/images/2026/Logo-UNIBA.jpg" class="img-sponsor"
+                    alt="Università di Bari Aldo Moro">
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4 col-sm-12 item-expand">
+        <a href="https://www.unimi.it/" target="_blank" rel="noopener">
+            <div class="pad shadow">
+                <img src="/assets/theme/images/2026/Logo-UNIMI.png" class="img-sponsor" alt="Università di Milano">
+            </div>
+        </a>
+    </div>
+    <div class="col-md-4 col-sm-12 item-expand">
+        <a href="https://www.itb.cnr.it/istituto/" target="_blank" rel="noopener">
+            <div class="pad shadow">
+                <img src="/assets/theme/images/2026/LOGO-CNR.png" class="img-sponsor"
+                    alt="CNR Istituto di Tecnologie Biomediche">
+            </div>
+        </a>
+    </div>
+</section>
+
+<section id="publications">
+    <h2>Publications</h2>
+
+</section>
+
+      </div>
+
+      
+    </div>
+    
+    
+</div>
+
+
+      </div>
+    </main>
+
+    <footer class="d-print-none">
+  <div class="container">
+    <div class="row">
+      
+        <div class="col-lg">
+          <ul class="list-inline">
+            
+
+            
+
+            
+
+            
+
+            
+
+            
+          </ul>
+        </div>
+      
+
+      
+    </div>
+
+    <div class="small mt-2">
+      
+        <p>© BA-PHERD: Big Data Analytics Pipeline for the Identification of Heterogeneous Extracellular non-coding RNAs as Disease Biomarkers</p>
+      
+      
+        <p>PRIN 2022.</p>
+
+      
+      
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/theme/js/anchor.min.js"></script>
+<script>
+  // Show anchors when hovering over headings, using anchor.js
+  (function () {
+    const headings = ".content h2[id], .content h3[id], .content h4[id], .content h5[id], .content h6[id]";
+    anchors.options = { placement: "right" };
+    anchors.add(headings);
+  })();
+</script>
+
+
+  </body>
+</html>
