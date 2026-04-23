@@ -3116,11 +3116,16 @@ pre.highlight { padding: 0.25rem; margin-bottom: 0.75rem; }
 
 @media screen and (max-width: 768px) { #workshop-topics { column-count: 1; }
   .pad-large { max-width: 320px !important; } }
-.navbar { background-color: white !important; border-bottom: 1px solid #e9ecef; z-index: 10000; position: fixed; top: 0px; width: 100%; }
+.navbar { background-color: white !important; border-bottom: 1px solid #e9ecef; z-index: 10000; position: fixed; top: 0; width: 100%; min-height: 110px; }
+@media (max-width: 991.98px) { .navbar .container { flex-direction: column; align-items: center; } }
+@media (min-width: 992px) { .navbar .container { flex-direction: row; align-items: center; } }
 .navbar .navbar-brand { font-weight: bold; }
 .navbar .navbar-brand img { height: 30px; }
-@media (max-width: 991.98px) { .navbar .dropdown-menu { border: none; padding-top: 0; } }
+.navbar .prin-image { height: 100%; width: auto; max-width: 50%; object-fit: contain; }
+@media (max-width: 991.98px) { .navbar .prin-image { height: 70%; max-width: 80%; display: block; margin: 0.25rem auto; } }
 .navbar .navbar-toggler { font-size: 90%; padding: 10px; text-transform: uppercase; }
+@media (max-width: 991.98px) { .navbar .navbar-toggler { margin: 0.25rem auto; } }
+@media (max-width: 991.98px) { .navbar .dropdown-menu { border: none; padding-top: 0; } }
 
 body > main { min-height: calc(100vh - 54px); padding-bottom: 1.5rem; }
 
@@ -3134,7 +3139,6 @@ body > main { min-height: calc(100vh - 54px); padding-bottom: 1.5rem; }
 @media (max-width: 767.98px) { .header h1, .header .h1 { font-size: 2rem; }
   .header h1.home, .header .home.h1 { font-size: 3rem; } }
 .header h1.home, .header .home.h1 { font-weight: normal; }
-.header .prin-image { width: 100%; height: auto; margin: 1rem 0; display: block; position: relative; z-index: 1; }
 .header .lead { font-size: 1.375rem; }
 .header .meta { font-size: 1.25rem; }
 .header .badge { border: 2px solid #fff; color: #fff; margin-top: 0.25rem; padding-left: 1.3em; padding-right: 1.3em; text-decoration: none; text-transform: uppercase; }
